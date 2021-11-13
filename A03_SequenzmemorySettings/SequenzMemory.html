@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SequenzMemory</title>
+    <link rel="stylesheet" href="SequenzMemory.css"> 
+    <script src="SequenzMemory.js"></script>
+</head>
+<body>
+    
+    <form>
+        <div id="formSettings">
+
+            <h2>Settings</h2>
+
+            <fieldset class="fieldsets" id="fsSize">
+
+                <legend>Choose the size of your cards</legend>
+
+                <input type="range" id="size" name="size" min="50" max="250" step="50">  <br/>
+
+            </fieldset>
+
+            <fieldset class="fieldsets" id="fsColor">
+
+                <legend>Pick the color for your...</legend>
+
+                <label for="backgroundColor">Background</label>
+                <input type="color" id="backgroundColor" name="backgroundColor" value="#ffffff">
+
+                <label for="cardColor">Cards</label>
+                <input type="color" id="cardColor" name="cardColor" value="#f6b73c"> 
+
+                <label for="fontColor">Font</label>
+                <input type="color" id="fontColor" name="fontColor" value="#000000"> <br/>
+
+            </fieldset>
+
+            <fieldset class="fieldsets" id="fsFont">
+
+                <legend>Pick your font</legend>
+
+                <input type="radio" id="arial" name="font" value="arial" >
+                <label for="arial">Arial</label>
+
+                <input type="radio" id="timesNew" name="font" value="timesNew">
+                <label for="timesNew">TimesNewRoman</label>
+
+                <input type="radio" id="comicSans" name="font" value="comicSans">
+                <label for="comicSans">Comic Sans</label> <br/>
+
+            </fieldset>
+
+            <fieldset class="fieldsets" id="fsTime">
+
+                <legend>Set your gametime</legend>
+
+                <input type="number" id="time" name="time" min="5" max="120" step="5"> 
+                <label for="time">seconds</label> <br/>
+
+            </fieldset>
+
+            <fieldset class="fieldsets" id="fsGameword">
+                
+                <legend>Choose your word!</legend>
+
+                <input type="text" id="gameWord" name="gameWord" value="" required minlength="2" maxlength="14">
+            
+            </fieldset>
+    
+            <button type="button">START</button>
+
+        </div>
+    </form>
+
+    
+
+</body>
+</html>
