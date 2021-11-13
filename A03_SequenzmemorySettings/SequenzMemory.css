@@ -35,8 +35,8 @@ button:hover {
 
 .container {
 
-    width: 2048px;
-    height: 1024px;
+    width: 1000px;
+    height: 400px;
 }
 
 
@@ -49,7 +49,15 @@ button:hover {
 
 }
 
-.hideCards {
+.hiddenCard {
 
     font-size: 0px;
+}
+
+.countdown {
+
+    border: 2px dotted black;
+    width: 200px;
+    height: 100px;
+    margin-left: 500px;
 }
